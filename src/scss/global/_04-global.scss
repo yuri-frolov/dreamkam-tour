@@ -1,0 +1,133 @@
+html {
+	box-sizing: border-box;
+	font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html,
+body {
+	height: 100%;
+	position: relative;
+}
+
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+button:focus,
+input:focus {
+	outline: transparent;
+}
+
+button {
+	@include no-btn;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+a {
+	text-decoration: none;
+}
+
+///DEBUG
+BODY > * > * {
+    outline: 2px solid deeppink;
+}
+
+BODY > * > * > * {
+    outline: 2px dashed lime;
+    outline-offset: -2px;
+}
+
+BODY > * > * > * > * {
+    outline: 2px dotted dodgerblue;
+    outline-offset: -4px;
+}
+
+BODY > * > * > * > * > * {
+    outline: 2px dotted rgb(30, 255, 68);
+    outline-offset: -4px;
+}
+
+BODY > * > * > * > * > * > * {
+    outline: 2px solid deeppink;
+}
+
+BODY > * > * > * > * > * > * > * {
+    outline: 2px solid rgb(3, 238, 255);
+    outline-offset: -2px;
+}
+
+BODY {
+  opacity: .7;
+}
+
+HTML {
+    background: url('../img/') 50% 0 no-repeat;
+}
+
+@media (min-width: 768px) {
+	HTML {
+		background-image: url('../img/');
+	}
+}
+
+@media (min-width: 1200px) {
+    HTML {
+      background-image: url('../img/');
+    }
+}
+
+@media (min-width: 1920px) {
+    HTML {
+      background-image: url('../img/');
+    }
+} 
+///
+
+.flex {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.--just-space {
+	justify-content: space-between;
+}
+
+.--just-center {
+	justify-content: center;
+}
+
+.--just-end {
+	justify-content: flex-end;
+}
+
+.--align-str {
+	align-items: stretch;
+}
+
+.--align-center {
+	align-items: center;
+}
+
+.--align-end {
+	align-items: flex-end;
+}
