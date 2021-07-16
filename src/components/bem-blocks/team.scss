@@ -1,0 +1,39 @@
+.team {
+
+}
+
+.container {
+
+}
+
+.container__inner {
+
+}
+
+.team__title {
+
+}
+
+.team__slider {
+    background: url(../img/slider-team-mobile.png) no-repeat;
+    min-width: 288px;
+    min-height: 501px;
+}
+
+.slider {
+
+}
+
+
+@media screen and (min-width: 768px) {
+    .team__slider {
+        background: url(../img/slider-team-tablet.png) no-repeat;
+        min-height: 615px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .team__slider {
+        background: url(../img/slider-team-desktop.png) no-repeat;
+    }
+}

@@ -1,0 +1,68 @@
+<section class="request">
+    <div class="container">
+        <div class="container__inner">
+            <h2 class="request__title">Онлайн-заявка</h2>
+            <ul class="request__social social">
+                <li class="social__item">
+                    <a href="#" class="social__link"></a>
+                </li>
+                <li class="social__item">
+                    <a href="#" class="social__link"></a>
+                </li>
+                <li class="social__item">
+                    <a href="#" class="social__link"></a>
+                </li>
+            </ul>
+            <form action="www.google.ru" class="request__form form">
+                <fieldset class="form__fieldset form__fieldset-group">
+                    <legend class="visually-hidden">Группа</legend>
+                    <label class="form__label">
+                        Имя участника
+                        <input class="form__input form__input-text" type="text" name="name" placeholder="Имя">
+                    </label>
+                    <label class="form__label">
+                        Количество человек
+                        <input class="form__input form__input-number" type="number" name="Количество" min="1" value="1"
+                            placeholder="1">
+                    </label>
+                </fieldset>
+                <fieldset class="form__fieldset form__fieldset-plan">
+                    <legend class="form__fieldset-legend">Тариф</legend>
+                    <div class="form__fieldset-plan-wrapper">
+                        <label class="form__fieldset-plan-label">Базовый (для камчадал)</label>
+                        <input class="form__radio" type="radio" name="plan" id="1">
+                        <span class="form__fieldset-plan-price">79 000 руб</span>
+                    </div>
+                    <div class="form__fieldset-plan-wrapper">
+                        <label class="form__fieldset-plan-label">Базовый с проживанием</label>
+                        <input class="form__radio" type="radio" name="plan" id="2">
+                        <span class="form__fieldset-plan-price">99 000 руб</span>
+                    </div>
+                    <div class="form__fieldset-plan-wrapper">
+                        <label class="form__fieldset-plan-label">Базовый с проживанием и долиной гейзеров</label>
+                        <input class="form__radio" type="radio" name="plan" id="3">
+                        <span class="form__fieldset-plan-price">179 000 руб</span>
+                    </div>
+                </fieldset>
+                <input class="form__input" type="date" name="date">
+                <label class="form__label">
+                    Комментарий
+                    <input class="form__input form__input-text" type="text" name="comment"
+                        placeholder="Напишите ваш комментарий здесь">
+                </label>
+                <input type="submit" value="Отправить заявку">
+            </form>
+
+            <div class="request__gift">
+                <h3 class="request__gift-title">Что нужно знать отправляясь на камчатку?</h3>
+                <div class="request__gift-wrapper">
+                    <p class="request__gift-help">Получите памятку туриста просто оставив свой e-mail.</p>
+                    <form action="www.google.ru" class="request__gift-form form">
+                        <input class="form__email" type="email" name="email" placeholder="Ваш e-mail">
+                        <input class="form__submit" type="submit" value="Получить">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
