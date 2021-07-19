@@ -1,7 +1,7 @@
 html {
 	box-sizing: border-box;
 	font-size: 100%;
-    font-family: sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 *,
@@ -51,6 +51,15 @@ img {
 
 a {
 	text-decoration: none;
+    color: #000;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
 }
 
 ///DEBUG
@@ -83,8 +92,8 @@ BODY > * > * > * > * > * > * > * {
 }
 
 BODY {
-  opacity: .7;
-}
+  opacity: .5;
+} */
 
 HTML {
     background: url('../img/mobile.png') 50% 0 no-repeat;
@@ -100,9 +109,9 @@ HTML {
     HTML {
       background-image: url('../img/desktop.png');
     }
-} */
+}
 ///
-/* .visually-hidden {
+.visually-hidden {
   position: absolute;
 
   width: 1px;
@@ -113,7 +122,7 @@ HTML {
 
   clip: rect(0 0 0 0);
   overflow: hidden;
-} */
+}
 
 .flex {
 	display: flex;

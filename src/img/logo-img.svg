@@ -1,7 +1,7 @@
-<svg width="123" height="92" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 78.82V5a5 5 0 015-5h36.91c3.717 0 6.134 3.912 4.472 7.236l-36.91 73.82C7.112 85.775 0 84.096 0 78.82zm123 0V5a5 5 0 00-5-5H81.09c-3.717 0-6.134 3.912-4.472 7.236l36.91 73.82c2.359 4.719 9.472 3.04 9.472-2.236zM64 87V13.18c0-5.276 7.113-6.955 9.472-2.236l36.91 73.82c1.662 3.324-.755 7.236-4.472 7.236H69a5 5 0 01-5-5zm-5-73.82V87a5 5 0 01-5 5H17.09c-3.717 0-6.134-3.912-4.472-7.236l36.91-73.82C51.888 6.225 59 7.904 59 13.18z" fill="url(#paint0_linear)"/>
+<svg class="logo__figure" width="50" height="38" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 32.556V2.066C0 .924.91 0 2.033 0h15.004c1.51 0 2.493 1.616 1.818 2.989L3.85 33.479C2.891 35.43 0 34.736 0 32.556zm50 0V2.066C50 .924 49.09 0 47.968 0H32.962c-1.51 0-2.493 1.616-1.818 2.989l15.005 30.49c.959 1.95 3.85 1.256 3.85-.923zm-23.984 3.379V5.444c0-2.18 2.892-2.873 3.85-.924l15.005 30.491c.675 1.373-.307 2.989-1.818 2.989H28.049c-1.123 0-2.033-.925-2.033-2.065zM23.984 5.444v30.49c0 1.141-.91 2.066-2.033 2.066H6.947c-1.51 0-2.493-1.616-1.818-2.989l15.004-30.49c.96-1.95 3.85-1.256 3.85.923z" fill="url(#paint0_linear)"/>
   <defs>
-    <linearGradient id="paint0_linear" x1="62" y1="92" x2="62" y2="0" gradientUnits="userSpaceOnUse">
+    <linearGradient id="paint0_linear" x1="25.203" y1="38" x2="25.203" y2="0" gradientUnits="userSpaceOnUse">
       <stop offset=".479" stop-color="#275553"/>
       <stop offset="1" stop-color="#F47648"/>
     </linearGradient>
