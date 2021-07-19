@@ -1,49 +1,146 @@
 .atf {
+    min-height: 1032px;
+    background: linear-gradient(180deg, #FFFFFF 2.56%, rgba(255, 255, 255, 0.1) 30%, rgba(255, 255, 255, 0) 55%), url(../img/atf__background.png);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100%, cover;
+    background-position: top center, bottom center;
+}
 
+.atf .container {
+    position: relative;
+}
+
+.atf .container__inner {
+    display: flex;
+    flex-direction: column;
 }
 
 .atf__title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 2.5em;
+    color: #fff;
 
+    margin-top: 123px;
+    line-height: 1.2;
 }
 
 .atf__tour {
-
+    color: #fff;
+    background: linear-gradient(91.82deg, #FB8B62 5.83%, #F47648 89.73%);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    max-width: 276px;
+    padding: 19px 8px;
+    border-radius: 16px;
+    margin-top: 29px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.125em;
+    font-weight: 700;
 }
 
 .atf__tour-name {
-
+    text-transform: uppercase;
 }
 
-.atf__tour-date {
-
-}
+.atf__tour-date {}
 
 .atf__description {
-
+    color: #fff;
+    font-size: 1.125em;
+    line-height: 1.5;
+    margin-top: 31px;
 }
 
 .atf__link {
-
-}
-
-.link {
-
+    margin-top: 29px;
 }
 
 .atf__slider {
     max-width: 760px;
     height: 328px;
     background: url(../img/slider.png) no-repeat;
+    background-size: contain;
+    margin-top: 18px;
+    outline: 1px solid red;
 }
 
 .atf__social {
-
+    display: flex;
+    margin-top: 38px;
+    margin-left: auto;
 }
 
-.atf__social-item {
-
+.atf__social-item:not(:last-child) {
+    margin-right: 19px;
 }
 
-.atf__social-link {
+.atf__social-link {}
 
+.atf__social-link-img {}
+
+@media screen and (min-width: 768px) {
+    .atf__title {
+        font-size: 3.5em;
+        margin-top: 162px;
+        max-width: 616px;
+    }
+
+    .atf__tour {
+        font-size: 1.875em;
+        min-width: 482px;
+        padding: 14px 25px;
+        margin-top: 25px;
+    }
+
+    .atf__description {
+        font-size: 1.25em;
+        max-width: 370px;
+        margin-top: 32px;
+        line-height: 1.3;
+    }
+
+    .atf__link {
+        margin-top: 32px;
+    }
+
+    .atf__link .link__circle {
+        width: 64px;
+        height: 64px;
+        margin-left: 18px;
+    }
+
+    .atf__link .link__circle-arrow {
+        width: 24px;
+        height: 24px;
+    }
+
+    .atf__slider {
+        margin-top: 22px;
+    }
+
+    .atf__social {
+        margin-top: 70px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .atf {
+        min-height: 833px;
+    }
+
+    .atf__slider {
+        position: absolute;
+        width: 715px;
+        height: 376px;
+        right: 0;
+        bottom: -99px;
+    }
+
+
+    .atf__social {
+        margin-left: 0;
+        margin-top: 144px;
+    }
 }

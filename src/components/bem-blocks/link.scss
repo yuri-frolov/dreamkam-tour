@@ -1,0 +1,22 @@
+.link {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.link__text {
+    font-size: 1.125em;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.link__circle {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    margin-left: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
