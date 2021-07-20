@@ -1,5 +1,5 @@
 .atf {
-    min-height: 1032px;
+    min-height: 1005px;
     background: linear-gradient(180deg, #FFFFFF 2.56%, rgba(255, 255, 255, 0.1) 30%, rgba(255, 255, 255, 0) 55%), url(../img/atf__background.png);
     background-repeat: no-repeat, no-repeat;
     background-size: 100%, cover;
@@ -13,31 +13,32 @@
 .atf .container__inner {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
 
 .atf__title {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
     font-size: 2.5em;
+    font-weight: 900;
+    line-height: 1.2;
     color: #fff;
 
-    margin-top: 123px;
-    line-height: 1.2;
+    margin-top: 100px;
 }
 
 .atf__tour {
-    color: #fff;
-    background: linear-gradient(91.82deg, #FB8B62 5.83%, #F47648 89.73%);
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    max-width: 276px;
-    padding: 19px 8px;
-    border-radius: 16px;
-    margin-top: 29px;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.125em;
     font-weight: 700;
+    color: #fff;
+    max-width: 276px;
+    padding: 19px 8px;
+    border-radius: 16px;
+    margin-top: 30px;
+    background: linear-gradient(91.82deg, #FB8B62 5.83%, #F47648 89.73%);
 }
 
 .atf__tour-name {
@@ -50,25 +51,25 @@
     color: #fff;
     font-size: 1.125em;
     line-height: 1.5;
-    margin-top: 31px;
+    margin-top: 30px;
 }
 
 .atf__link {
-    margin-top: 29px;
+    margin-top: 30px;
 }
 
 .atf__slider {
     max-width: 760px;
     height: 328px;
     background: url(../img/slider.png) no-repeat;
-    background-size: contain;
-    margin-top: 18px;
+    margin-top: 30px;
     outline: 1px solid red;
+    align-self: stretch;
 }
 
 .atf__social {
     display: flex;
-    margin-top: 38px;
+    margin-top: 30px;
     margin-left: auto;
 }
 
@@ -81,9 +82,13 @@
 .atf__social-link-img {}
 
 @media screen and (min-width: 768px) {
+    .atf {
+        min-height: 991px;
+    }
+
     .atf__title {
         font-size: 3.5em;
-        margin-top: 162px;
+        margin-top: 150px;
         max-width: 616px;
     }
 
@@ -91,18 +96,18 @@
         font-size: 1.875em;
         min-width: 482px;
         padding: 14px 25px;
-        margin-top: 25px;
+        margin-top: 30px;
     }
 
     .atf__description {
         font-size: 1.25em;
         max-width: 370px;
-        margin-top: 32px;
-        line-height: 1.3;
+        margin-top: 30px;
+        line-height: 1.5;
     }
 
     .atf__link {
-        margin-top: 32px;
+        margin-top: 30px;
     }
 
     .atf__link .link__circle {
@@ -117,11 +122,11 @@
     }
 
     .atf__slider {
-        margin-top: 22px;
+        margin-top: 30px;
     }
 
     .atf__social {
-        margin-top: 70px;
+        margin-top: 30px;
     }
 }
 
@@ -141,6 +146,6 @@
 
     .atf__social {
         margin-left: 0;
-        margin-top: 144px;
+        margin-top: 150px;
     }
 }
