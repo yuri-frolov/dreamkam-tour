@@ -1,2 +1,46 @@
+$orange: #f47648;
+$grey: #acacac;
+.tour__day {
+    position: relative;
+    overflow: hidden;
+}
+
+.tour__day-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.tour__day-description {
+    line-height: 1.5;
+}
+
+.orange-text {
+    color: $orange;
+}
+
+.important-text {
+    font-weight: 700;
+    font-style: normal;
+}
+
+@media screen and (min-width: 768px) {
+    .tour__day-title {
+        font-size: 2.5em;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .tour__day {
+        padding-top: 80px;
+    }
+
+    .tour__day-title {
+        margin-bottom: 55px;
+    }
+}
+
 @use 'tour__info';
 @use 'tour__day';

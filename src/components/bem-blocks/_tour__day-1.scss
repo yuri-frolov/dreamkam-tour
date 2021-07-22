@@ -1,0 +1,57 @@
+$grey: #acacac;
+
+.tour__day-1 {
+    background: linear-gradient(to bottom, #000 20%, transparent 60%),
+
+    url(../img/tour-day-1-bg.png) center center / cover no-repeat;
+
+    padding-bottom: 150px;
+
+    & .tour__day-title {
+        color: #fff;
+        max-width: 458px;
+    }
+
+    & .tour__day-description {
+        color: $grey;
+        max-width: 688px;
+    }
+
+    & .important-text {
+        color: #fff;
+    }
+
+    & .text-link {
+        color: inherit;
+        border-bottom: 1px solid $grey;
+    }
+
+/*     &:after {
+        content: '';
+    } */
+}
+
+.tour__day-1-slider {
+    max-width: 760px;
+    height: 328px;
+    background: url(../img/slider-day-1.png) no-repeat;
+    margin-top: 30px;
+}
+
+@media screen and (min-width: 1440px) {
+    .tour__day-1 {
+        & .tour__day-description {
+            color: $grey;
+            max-width: 461px;
+        }
+    }
+
+    .tour__day-1-slider {
+        position: absolute;
+        width: 948px;
+        height: 390px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+    }
+}
