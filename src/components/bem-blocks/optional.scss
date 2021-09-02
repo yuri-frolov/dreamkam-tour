@@ -1,0 +1,53 @@
+$grey: #acacac;
+
+.optional {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #fff;
+}
+
+.optional__services-table {
+  & caption {
+    text-align: left;
+    font-weight: 700;
+    font-size: 1.25em;
+    margin-bottom: 15px;
+  }
+
+  & tr {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: block;
+    border-bottom: 1px solid $grey;
+  }
+
+  & th {
+    display: block;
+    text-align: left;
+  }
+
+  & td {
+    display: block;
+    padding-top: 10px;
+    color: $grey;
+  }
+}
+
+
+@media screen and (min-width: 500px) {
+  .optional__services-table {
+    min-width: 100%;
+    max-width: 480px;
+    & tr {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    & td {
+      max-width: 330px;
+      text-align: left;
+      line-height: 1.5;
+    }
+  }
+}

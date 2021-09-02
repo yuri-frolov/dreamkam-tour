@@ -1,71 +1,69 @@
 .tour__day-2 {
-    padding-bottom: 80px;
+  padding-bottom: 80px;
 
-    & .tour__day-title {
-        max-width: 688px;
+  & .tour__day-title {
+    max-width: 688px;
 
-        &:before {
-            content: url(../img/viluchinsky.png);
-            position: absolute;
-            top: 10%;
-            right: 15%;
-            width: 700px;
-            height: 300px;
-            z-index: -1;
-        }
+    &:before {
+      content: url(../img/viluchinsky.png);
+      position: absolute;
+      top: 10%;
+      right: 15%;
+      width: 700px;
+      height: 300px;
+      z-index: -1;
     }
+  }
 
-    & .tour__day-description-part-1 {
-        max-width: 433px;
-    }
+  & .tour__day-description-part-1 {
+    max-width: 433px;
+  }
 
-    & .tour__day-description-part-2 {
-        max-width: 301px;
-        margin-top: 200px;
-    }
+  & .tour__day-description-part-2 {
+    max-width: 301px;
+    margin-top: 200px;
+  }
 
-    & .text-link {
-        border-bottom: 1px solid #000;
-    }
+  & .text-link {
+    border-bottom: 1px solid #000;
+  }
 }
 
 .tour__day-2-slider {
-    max-width: 760px;
-    height: 328px;
-    background: url(../img/slider-day-2.png) no-repeat;
-    margin-top: 30px;
+  max-width: 760px;
+  height: 328px;
+  background: url(../img/slider-day-2.png) no-repeat;
+  margin-top: 30px;
 }
 
 @media screen and (min-width: 768px) {
-    .tour__day-2 {
+  .tour__day-2 {
 
-        & .tour__day-description-part-1 {
-
-        }
-    }
+    & .tour__day-description-part-1 {}
+  }
 }
 
 @media screen and (min-width: 1440px) {
-    .tour__day-2 {
+  .tour__day-2 {
 
-        & .tour__day-title {
-            max-width: 856px;
-        }
-
-        & .tour__day-description-part-1 {
-            max-width: 548px;
-        }
-
-        & .tour__day-description-part-2 {
-            max-width: 478px;
-            margin-left: auto;
-        }
-
-        & .tour__day-2-slider {
-            position: absolute;
-            width: 760px;
-            height: 328px;
-            bottom: 84px;
-        }
+    & .tour__day-title {
+      max-width: 856px;
     }
+
+    & .tour__day-description-part-1 {
+      max-width: 548px;
+    }
+
+    & .tour__day-description-part-2 {
+      max-width: 478px;
+      margin-left: auto;
+    }
+
+    & .tour__day-2-slider {
+      position: absolute;
+      width: 760px;
+      height: 328px;
+      bottom: 84px;
+    }
+  }
 }

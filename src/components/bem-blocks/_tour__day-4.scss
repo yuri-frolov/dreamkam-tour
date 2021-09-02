@@ -1,0 +1,50 @@
+$grey: #acacac;
+
+.tour__day-4 {
+  padding-top: 50px;
+
+  & .tour__day-title {
+    color: #fff;
+  }
+
+  & .tour__day-description {
+    color: $grey;
+  }
+
+  & .important-text {
+    color: #fff;
+  }
+
+  & .text-link {
+    color: inherit;
+    border-bottom: 1px solid $grey;
+  }
+
+  & .col-1 {
+    max-width: 700px;
+  }
+}
+
+.tour__day-4-slider {
+  max-width: 760px;
+  height: 400px;
+  background: url(../img/slider-day-4.png) no-repeat;
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 1440px) {
+  .tour__day-4 {
+    & .row {
+      display: flex;
+    }
+
+    & .col-1 {
+      max-width: 536px;
+      margin-right: auto;
+    }
+
+    &-slider {
+      width: 600px;
+    }
+  }
+}
