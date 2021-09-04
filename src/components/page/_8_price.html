@@ -3,26 +3,42 @@
     <div class="container__inner">
       <!--Внимательно. Скорее всего придётся всё двигать-->
       <h2 class="price__title">Стоимость участия</h2>
-      <table class="price__table">
+      <table class="price__table table table--price">
         <caption class="visually-hidden">
           Тарифы
         </caption>
         <tr>
           <th>Базовый (для камчадал)</th>
-          <td tabindex="0">79 000 руб</td>
+          <td tabindex="0">79 000 ₽</td>
         </tr>
         <tr>
           <th>Базовый c проживанием</th>
-          <td>99 000 руб</td>
+          <td>99 000 ₽</td>
         </tr>
         <tr>
           <th>Базовый с проживанием и долиной гейзеров</th>
-          <td>179 000 руб</td>
+          <td>179 000 ₽</td>
         </tr>
       </table>
 
-      <a href="#" class="price__link link">Отправить заявку</a>
-
+      <a href="#" class="price__link link">
+        <span class="link__text">Отправить заявку</span>
+        <span class="link__circle">
+          <svg class="link__circle-arrow" width="23" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0)">
+              <path
+                d="M16.517 6.127h-.001l-4.607.02a.625.625 0 00.005 1.25l3.093-.014-9.34 9.379a.625.625 0 10.885.882l9.34-9.378v3.093a.625.625 0 001.25 0l.002-4.607a.626.626 0 00-.627-.625z"
+                fill="#000" />
+            </g>
+            <defs>
+              <clipPath id="clip0">
+                <path fill="#000" transform="rotate(-45.115 14.444 6)" d="M0 0h16v16H0z" />
+              </clipPath>
+            </defs>
+          </svg>
+        </span>
+      </a>
+      <div class="price__wrapper">
       <div class="price__details price__details--included">
         <h3 class="price__details-title">В стоимость входит</h3>
         <ul class="price__details-list">
@@ -41,22 +57,25 @@
       <div class="price__details price__details--optional">
         <h3 class="price__details-title">За дополнительную плату</h3>
         <ul class="price__details-list">
-          <li class="price__details-item">встреча и проводы в аэропорту</li>
-          <li class="price__details-item">питание: обеды во время экскурсий</li>
-          <li class="price__details-item">услуги гида</li>
-          <li class="price__details-item">
-            все транспортные услуги ( автобусы, джипы-вездеходы 4WD)
-          </li>
-          <li class="price__details-item">
-            все указанные в программе экскурсии
-          </li>
+          <li class="price__details-item">вертолётная экскурсия в Долину Гейзеров и кальдеру Узона, оплачивается в день вылета</li>
+          <li class="price__details-item">дополнительные экскурсии и опции</li>
+          <li class="price__details-item">размещение в гостинице</li>
+          <li class="price__details-item">питание(кроме обедов во время экскурсий)</li>
+          <li class="price__details-item">личные расходы</li>
         </ul>
+      </div>
       </div>
 
       <ul class="price__more">
-        <li class="price__more-item">Информация о бронях</li>
-        <li class="price__more-item">Важная информация</li>
-        <li class="price__more-item">Условия договора и возврата</li>
+        <li class="price__more-item">
+          <a>Информация о бронях</a>
+        </li>
+        <li class="price__more-item">
+          <a>Важная информация</a>
+        </li>
+        <li class="price__more-item">
+          <a>Условия договора и возврата</a>
+        </li>
       </ul>
     </div>
   </div>

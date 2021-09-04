@@ -1,0 +1,67 @@
+$grey: #acacac;
+
+.table {
+  width: 100%;
+}
+
+tr {
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid $grey;
+}
+
+th {
+  display: flex;
+  text-align: left;
+  font-weight: normal;
+  max-width: 300px;
+  align-items: center;
+}
+
+td {
+  display: block;
+  color: $grey;
+}
+
+@media screen and (min-width: 450px) {
+  tr {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  .table--price {
+    margin-bottom: 50px;
+  }
+
+  tr {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  td {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  tr {
+    padding-right: 15px;
+  }
+}
+
+
+.table--price {
+  th {
+
+  }
+
+  td {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #000;
+  }
+}

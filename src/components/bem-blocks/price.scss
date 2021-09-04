@@ -1,51 +1,136 @@
-.price {
+$orange: #F47648;
 
+.price .container__inner {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: 4px solid #000;
 }
 
 .price__title {
-
-}
-
-.price__table {
-
-}
-
-.visually-hidden {
-
+  font-size: 1.5em;
+  font-weight: 700;
 }
 
 .price__link {
+  margin: 40px 0 40px 0;
 
+  & .link__text {
+    color: #000;
+    border-color: #000;
+  }
+
+  & .link__circle {
+    border-color: #000;
+  }
 }
 
 .price__details {
+  &-title {
 
+  }
+
+  &-list {
+    margin-top: 15px;
+  }
+
+  &-item {
+    max-width: 420px;
+    line-height: 1.5;
+  }
+
+  &-item:not(:first-child) {
+    margin-top: 15px;
+  }
+
+  &-item:before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: rgba(25, 133, 128, 0.3);
+  }
 }
 
 .price__details--included {
-
-}
-
-.price__details-title {
-
-}
-
-.price__details-list {
-
-}
-
-.price__details-item {
-
+ & .price__details-title {
+  color: #275553;
+ }
 }
 
 .price__details--optional {
-
+  margin-top: 50px;
 }
 
 .price__more {
-
+  margin-top: 50px;
 }
 
 .price__more-item {
 
+  & a {
+   color: $orange;
+   border-bottom: 1px solid $orange;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .price .container__inner {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  .price__title {
+    font-size: 2.5em;
+  }
+
+  .price__table {
+    max-width: 688px;
+  }
+
+  .price__more {
+    margin-top: 0;
+    position: absolute;
+    top: 540px;
+    right: 0;
+  }
+
+  .price__link {
+    margin-top: 0;
+    position: absolute;
+    top: 700px;
+    right: 0;
+  }
+}
+
+@media screen and (min-width: 1040px) {
+
+  .price__wrapper {
+    display: flex;
+  }
+
+  .price__details {
+    margin-top: 0;
+  }
+
+  .price__more {
+    top: 170px;
+  }
+
+  .price__link {
+    top: 320px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .price .container__inner {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
