@@ -21,13 +21,13 @@
     color: inherit;
     border-bottom: 1px solid $grey;
   }
-}
 
-.tour__day-5-slider {
-  max-width: 1000px;
-  height: 400px;
-  background: url(../img/slider-day-5.png) no-repeat;
-  margin-top: 30px;
+  &-slider {
+    max-width: 1000px;
+    height: 400px;
+    background: url(../img/slider-day-5.png) no-repeat;
+    margin-top: 30px;
+  }
 }
 
 @media screen and (min-width: 1440px) {

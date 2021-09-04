@@ -1,0 +1,100 @@
+.tour__day-7 {
+  padding-top: 50px;
+
+  & .important-text {
+    color: #fff;
+  }
+
+  & .text-link {
+    color: inherit;
+    border-bottom: 1px solid $grey;
+  }
+
+  &-img {
+    transform: translateX(10%);
+  }
+
+  & .optional {
+    color: #000;
+  }
+
+  &-slider {
+    max-width: 1000px;
+    height: 400px;
+    background: url(../img/slider-day-7.png) no-repeat;
+  }
+}
+
+@import 'optional.scss';
+
+@media screen and (min-width: 768px) {
+  .tour__day-7 {
+    padding-top: 50px;
+
+    & .tour__day-title {
+      max-width: 700px;
+    }
+
+    & .tour__day-description-part-1 {
+      display: inline-block;
+      width: 40%;
+      min-height: 420px;
+    }
+
+    &-img {
+      position: absolute;
+      top: 150px;
+      right: -100px;
+      z-index: -1;
+    }
+
+    & .tour__day-description-part-2 {
+      display: block;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .tour__day-7 {
+    padding-top: 50px;
+
+    &-img {
+      transform: translateX(-10%);
+    }
+
+    & .tour__day-description-part-1 {
+      min-height: 0;
+      margin-bottom: 30px;
+    }
+
+    & .tour__day-description-part-2 {
+      width: 40%;
+    }
+
+    & .optional {
+      max-width: 700px;
+    }
+}
+}
+
+@media screen and (min-width: 1440px) {
+  .tour__day-7 {
+
+    & .row {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    & .col-1 {
+      min-width: 480px;
+      margin-left: 30px;
+    }
+
+    &-slider {
+      width: 840px;
+      background: url(../img/slider-day-7-desktop.png) no-repeat;
+    }
+  }
+
+}

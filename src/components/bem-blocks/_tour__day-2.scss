@@ -27,19 +27,12 @@
   & .text-link {
     border-bottom: 1px solid #000;
   }
-}
 
-.tour__day-2-slider {
-  max-width: 760px;
-  height: 328px;
-  background: url(../img/slider-day-2.png) no-repeat;
-  margin-top: 30px;
-}
-
-@media screen and (min-width: 768px) {
-  .tour__day-2 {
-
-    & .tour__day-description-part-1 {}
+  &-slider {
+    max-width: 760px;
+    height: 328px;
+    background: url(../img/slider-day-2.png) no-repeat;
+    margin-top: 30px;
   }
 }
 

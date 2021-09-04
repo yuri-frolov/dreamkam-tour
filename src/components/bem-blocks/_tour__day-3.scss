@@ -2,30 +2,35 @@
   padding-top: 50px;
   padding-bottom: 50px;
   background: linear-gradient(to bottom, #fff 40%, transparent 70%, #000 95%),
-    url(../img/day-3.png) bottom center / contain no-repeat;
-}
+    url(../img/day-3.png) bottom center / cover no-repeat;
 
-.tour__day-3-slider {
-  max-width: 760px;
-  height: 358px;
-  background: url(../img/slider-day-3.png) no-repeat;
-  margin-top: 30px;
+  &-slider {
+    max-width: 760px;
+    height: 358px;
+    background: url(../img/slider-day-3.png) no-repeat;
+    margin-top: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .tour__day-3 {
     padding-top: 60px;
     padding-bottom: 100px;
+
+    &-slider {
+      background: url(../img/slider-day-3-tablet.png) no-repeat;
+      min-height: 430px;
+    }
   }
 
-  .tour__day-3-slider {
-    background: url(../img/slider-day-3-tablet.png) no-repeat;
-  }
 }
 
 @media screen and (max-width: 1439px) {
-  .tour__day-3 .col-1 {
-    max-width: 900px;
+  .tour__day-3 {
+
+    & .col-1 {
+      max-width: 900px;
+    }
   }
 }
 
@@ -33,20 +38,20 @@
   .tour__day-3 {
     margin-top: 120px;
     padding-bottom: 300px;
-  }
 
-  .tour__day-3 .row {
-    display: flex;
-    flex-direction: row-reverse;
-  }
+    & .row {
+      display: flex;
+      flex-direction: row-reverse;
+    }
 
-  .tour__day-3 .col-1 {
-    max-width: 510px;
-    margin-left: auto;
-  }
+    & .col-1 {
+      max-width: 510px;
+      margin-left: auto;
+    }
 
-  .tour__day-3-slider {
-    min-width: 650px;
-    background: url(../img/slider-day-3-desktop.png) no-repeat;
+    &-slider {
+      min-width: 650px;
+      background: url(../img/slider-day-3-desktop.png) no-repeat;
+    }
   }
 }

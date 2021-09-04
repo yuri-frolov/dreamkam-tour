@@ -23,13 +23,13 @@ $grey: #acacac;
   & .col-1 {
     max-width: 700px;
   }
-}
 
-.tour__day-4-slider {
-  max-width: 760px;
-  height: 400px;
-  background: url(../img/slider-day-4.png) no-repeat;
-  margin-top: 30px;
+  &-slider {
+    max-width: 760px;
+    height: 400px;
+    background: url(../img/slider-day-4.png) no-repeat;
+    margin-top: 30px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
