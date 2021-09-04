@@ -1,0 +1,70 @@
+.tour__day-8 {
+    background: linear-gradient(to bottom, #fff 5%, transparent 50%, #000 95%),
+    url(../img/day-8.jpg) right 0px / cover no-repeat;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    & .tour__day-description {
+      color: #fff;
+    }
+}
+
+.container {
+
+}
+
+.container__inner {
+
+}
+
+.tour__day-title {
+
+}
+
+.orange-text {
+
+}
+
+.tour__day-description {
+
+}
+
+@media screen and (min-width: 768px) {
+  .tour__day-8 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    & .tour__day-title {
+      max-width: 700px;
+    }
+
+    & .tour__day-description {
+      max-width: 700px;
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .tour__day-8 {
+
+    & .tour__day-title {
+      text-align: center;
+      margin: 0px auto 50px auto;
+    }
+
+    & .tour__day-description {
+      text-align: center;
+      max-width: 500px;
+      margin: 0px auto 0px auto;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .tour__day-8 {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
