@@ -1,65 +1,123 @@
-.request {
+$orange: #F47648;
 
+.request {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: linear-gradient(to bottom,#fff 30%,transparent 50%),
+  linear-gradient(to top,#000 10%,transparent 50%),
+  url(../img/form-bg.jpg) center 300px / cover no-repeat;
 }
 
 .request__title {
+  font-size: 2em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  margin-right: 30px;
+  margin-bottom: 15px;
+}
 
+.request__wrapper.row {
+  & .col-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .request__social {
-
+  display: flex;
 }
 
-.social {
-
-}
-
-.social__item {
-
+.social__item:not(:last-child) {
+  margin-right: 15px;
 }
 
 .social__link {
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
 }
 
-.request__form {
 
+.request__form {
+ & .form__submit {
+     margin-left: auto;
+ }
 }
 
 .form {
-
+  max-width: 564px;
 }
 
 .form__fieldset {
-
-}
-
-.form__fieldset-group {
-
-}
-
-.form__label {
-
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .form__input {
-
+  font-size: 1.25em;
+  background-color: transparent;
+  padding: 13px 8px 13px 8px;
+  border: none;
+  border-bottom: 1px solid #000;
 }
 
-.form__input-text {
-
+.form__label {
+  font-size: 0.875em;
+  & > * {
+    display: block;
+  }
 }
 
-.form__input-number {
-
+.form__fieldset-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
 }
 
 .form__fieldset-plan {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 
+  & .form__fieldset-legend {
+    margin-bottom: 10px;
+  }
+
+  & .form__fieldset-plan-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  & .form__fieldset-plan-label {
+    cursor: pointer;
+  }
+
+  & .form__fieldset-plan-price {
+    font-size: 1.25em;
+    font-weight: 700;
+  }
+}
+
+.form__fieldset-date {
+
+  & .form__input-date {
+    width: 260px;
+  }
+}
+
+.form__fieldset-comment {
+
+  & .form__input-text {
+    width: 100%;
+  }
 }
 
 .form__fieldset-legend {
-
+  font-size: 0.875em;
 }
 
 .form__fieldset-plan-wrapper {
@@ -78,30 +136,121 @@
 
 }
 
-.request__gift {
+.form__submit {
+  display: block;
+  width: 100%;
+  max-width: 180px;
+  padding: 10px 30px 10px 30px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  background-color: $orange;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: all 0.2s ease;
+  &:hover {
+    opacity: 1;
+  }
+}
 
+//////////////// gift
+.request__gift {
+  margin-top: 250px;
 }
 
 .request__gift-title {
-
-}
-
-.request__gift-wrapper {
-
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+  color: #fff;
+  margin-bottom: 10px;
 }
 
 .request__gift-help {
-
+  color: #fff;
+  line-height: 1.5;
 }
 
 .request__gift-form {
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  & .form__email {
+    font-size: 1.25em;
+    padding: 13px 8px 13px 8px;
+    border: none;
+    border-bottom: 1px solid #999999;
+    background-color: transparent;
+    color: #fff;
+  }
+
+  & .form__submit {
+    margin-top: 15px;
+  }
+}
+////////////////
+
+@media screen and (min-width: 768px) {
+  .request {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .form__fieldset {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .request__gift {
+    & .row {
+      display: flex;
+      align-items: center;
+    }
+
+    & .row .col-1 {
+      margin-right: 25px;
+    }
+  }
+
+  .request__gift-form {
+    display: flex;
+
+    & .form__email {
+      flex-grow: 1;
+      margin-right: 25px;
+    }
+  }
 
 }
 
-.form__email {
 
-}
+@media screen and (min-width: 1440px) {
+  .request {
+    padding-top: 100px;
 
-.form__submit {
+    & .request__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
 
+    & .col-1 {
+      flex-direction: column;
+    }
+  }
+
+  .request__gift {
+    & .row .col-1 {
+      margin-right: 100px;
+    }
+  }
+
+  .request__gift-title {
+    font-size: 2.25em;
+  }
+
+  .request__gift-help {
+    font-size: 1.25em;
+  }
 }
