@@ -1,5 +1,6 @@
 .team {
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .container {}
@@ -33,6 +34,7 @@
 
   .team {
     padding-top: 65px;
+    padding-bottom: 80px;
   }
 
   .team__slider {
@@ -44,6 +46,7 @@
 @media screen and (min-width: 1440px) {
   .team {
     padding-top: 120px;
+    padding-bottom: 120px;
   }
 
   .team__title {
