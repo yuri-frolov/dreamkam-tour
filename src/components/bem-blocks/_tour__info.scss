@@ -2,7 +2,7 @@
     position: relative;
     padding-top: 50px;
     padding-bottom:50px;
-    background: linear-gradient(to bottom, #fff 40%, transparent 70%, #000 95%), url(../img/block2-background.png) 30% 390px / cover no-repeat;
+    background: linear-gradient(to bottom, #fff 40%, transparent 70%, #000 95%), url(../img/block2-background.jpg) 30% 390px / cover no-repeat;
 }
 
 .tour__info-title {
@@ -63,17 +63,17 @@
     &--period {
         &:before {
             content: url(../img/period.svg);
-        }        
+        }
     }
     &--duration {
         &:before {
             content: url(../img/duration.svg);
-        }        
+        }
     }
     &--accomodation {
         &:before {
             content: url(../img/accomodation.svg);
-        }        
+        }
     }
 }
 
@@ -134,7 +134,7 @@
         margin-right: -40px;
         justify-content: flex-start;
     }
-    
+
     .tour__info-list {
         min-width: 160px;
         margin-right: 20px;

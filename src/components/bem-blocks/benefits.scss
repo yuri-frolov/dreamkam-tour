@@ -32,19 +32,19 @@
     box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.1);
 
     &:nth-child(1) .benefits__item-image-wrapper {
-        background: url(../img/benefit-audio-accompaniment.jpg) center center / cover no-repeat;
+        background: url(../img/benefit-1.jpg) center center / cover no-repeat;
     }
 
     &:nth-child(2) .benefits__item-image-wrapper {
-        background: url(../img/benefit-varied-food.jpg) center center / cover no-repeat;
+        background: url(../img/benefit-2.jpg) center center / cover no-repeat;
     }
 
     &:nth-child(3) .benefits__item-image-wrapper {
-        background: url(../img/benefit-safety.jpg) center center / cover no-repeat;
+        background: url(../img/benefit-3.jpg) center center / cover no-repeat;
     }
 
     &:nth-child(4) .benefits__item-image-wrapper {
-        background: url(../img/benefit-amazing-photo.jpg) center center / cover no-repeat;
+        background: url(../img/benefit-4.jpg) center center / cover no-repeat;
     }
 }
 
@@ -85,7 +85,7 @@
     .benefits__list {
         justify-content: space-between;
         align-items: stretch;
-    }   
+    }
 
     .benefits__item {
         width: 288px;
