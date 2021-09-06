@@ -1,39 +1,56 @@
 .team {
-
+  padding-top: 50px;
 }
 
-.container {
+.container {}
 
-}
-
-.container__inner {
-
-}
+.container__inner {}
 
 .team__title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+}
 
+.team__description {
+    margin-top: 50px;
+    line-height: 1.5;
+    max-width: 600px;
+    color: #313131;
 }
 
 .team__slider {
-    background: url(../img/slider-team-mobile.png) no-repeat;
-    min-width: 288px;
-    min-height: 501px;
+  background: url(../img/slider-team-mobile.png) no-repeat;
+  min-width: 288px;
+  min-height: 501px;
+  margin-top: 50px;
 }
 
-.slider {
-
-}
+.slider {}
 
 
 @media screen and (min-width: 768px) {
-    .team__slider {
-        background: url(../img/slider-team-tablet.png) no-repeat;
-        min-height: 615px;
-    }
+
+  .team {
+    padding-top: 65px;
+  }
+
+  .team__slider {
+    background: url(../img/slider-team-tablet.png) no-repeat;
+    min-height: 615px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
-    .team__slider {
-        background: url(../img/slider-team-desktop.png) no-repeat;
-    }
+  .team {
+    padding-top: 120px;
+  }
+
+  .team__title {
+    font-size: 4em;
+  }
+
+  .team__slider {
+    background: url(../img/slider-team-desktop.png) no-repeat;
+  }
 }
