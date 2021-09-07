@@ -12,20 +12,23 @@
   }
 }
 
-.footer .container .container__inner {
+.footer .row {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
+  align-items: flex-start;
 
-.footer__wrapper {}
+  &>* {
+    padding: 0px 40px 40px 0px;
+  }
+}
 
 .footer__menu {
   color: #BABABA;
   display: flex;
   flex-direction: column;
+  margin-top: 40px;
   gap: 15px;
-  padding: 40px 40px 40px 0px;
 
   &-item a {
     color: #bababa;
@@ -36,7 +39,6 @@
 
 .footer__instagram-profile {
   display: block;
-  padding: 0px 40px 40px 0px;
   min-width: 288px;
   min-height: 260px;
 }
@@ -47,9 +49,7 @@
   background: url(../img/social-instagram.png) no-repeat;
 }
 
-.footer__social {
-  padding: 0px 40px 40px 0px;
-}
+.footer__social {}
 
 .footer__social-links-wrapper {
   margin-top: 40px;
@@ -117,6 +117,7 @@
 .footer__bottom {
   padding-top: 25px;
   padding-bottom: 25px;
+  border-top: 2px solid #363636;
   width: 100%;
 }
 
@@ -125,34 +126,19 @@
   color: #fff;
 }
 
-@media screen and (min-width: 527px) {
-  .footer__instagram-profile {
-    padding: 0px 0px 40px 0px;
-  }
-
-  .footer__social {
-    padding: 0px 20px 40px 0px;
-  }
-}
-
-
 @media screen and (min-width:768px) {
-
   .footer {
     padding-top: 65px;
   }
-
-  .footer__instagram-profile {
-    padding-top: 40px;
-    min-width: 288px;
-    min-height: 260px;
-  }
 }
 
-@media screen and (min-width: 863px) {
-  .footer__instagram-profile {
-    padding-right: 40px;
+@media screen and (min-width: 970px) {
+  .footer .row {
+    & > div:last-child {
+      /* обнуление правого паддинга последнего элемента,
+      чтобы при достаточном месте в ряду он был вплотную
+      к правой границе */
+      padding: 0px 0px 40px 0px;
+    }
   }
 }
-
-@media screen and (min-width:1440px) {}
