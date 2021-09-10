@@ -28,18 +28,17 @@
               <legend class="visually-hidden">Группа</legend>
               <label class="form__label">
                 Имя участника
-                <input class="form__input form__input-text" type="text" name="name" placeholder="Имя" />
+                <input class="form__input form__input-text" type="text" name="name" placeholder="Имя" required maxlength="20"/>
               </label>
               <label class="form__label">
                 Количество человек
-                <input class="form__input form__input-number" type="number" name="Количество" min="1" value="1"
-                  placeholder="1" />
+                <input class="form__input form__input-number" type="number" name="Количество" min="1" placeholder="1" required/>
               </label>
             </fieldset>
             <fieldset class="form__fieldset form__fieldset-plan">
               <legend class="form__fieldset-legend">Тариф</legend>
               <div class="form__fieldset-plan-wrapper">
-                <input class="form__radio" type="radio" name="plan" id="1" />
+                <input class="form__radio" type="radio" name="plan" id="1" checked/>
                 <span class="form__radio-custom"></span>
                 <label class="form__fieldset-plan-label" for="1">Базовый (для камчадал)</label>
                 <span class="form__fieldset-plan-price">79 000 ₽</span>
@@ -59,8 +58,8 @@
             </fieldset>
             <fieldset class="form__fieldset form__fieldset-date">
               <label class="form__label">
-                Даты тура
-                <input class="form__input form__input-date" type="date" name="date" />
+                Желаемая дата начала тура
+                <input class="form__input form__input-date" type="date" name="date" required/>
               </label>
             </fieldset>
 
