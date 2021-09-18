@@ -7,14 +7,14 @@
   <meta name="description" content="Easy webdev startpack by budfy" />
   <meta name="keywords" content="Webdev, Gulp4, html, css, js, jquery" />
   <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/libs.min.css" />
   <link rel="stylesheet" href="css/style.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;600;700;900&display=swap"
-    rel="stylesheet"
-  />
+    rel="stylesheet" />
   <title>Dreamkam tour - тур на Камчатку</title>
 </head>
 
@@ -66,7 +66,7 @@
 </header>
 
 	<main class="main">
-		<article class="atf">
+		<section class="atf">
   <div class="container">
     <div class="container__inner">
       <h1 class="visually-hidden">Тур на Камчатку</h1>
@@ -82,47 +82,67 @@
       <a href="#" class="atf__link link">
         <span class="link__text">Расписание тура</span>
         <span class="link__circle">
-          <svg
-            class="link__circle-arrow"
-            width="23"
-            height="24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+          <svg class="link__circle-arrow" width="23" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0)">
               <path
                 d="M16.517 6.127h-.001l-4.607.02a.625.625 0 00.005 1.25l3.093-.014-9.34 9.379a.625.625 0 10.885.882l9.34-9.378v3.093a.625.625 0 001.25 0l.002-4.607a.626.626 0 00-.627-.625z"
-                fill="#fff"
-              />
+                fill="#fff" />
             </g>
             <defs>
               <clipPath id="clip0">
-                <path
-                  fill="#fff"
-                  transform="rotate(-45.115 14.444 6)"
-                  d="M0 0h16v16H0z"
-                />
+                <path fill="#fff" transform="rotate(-45.115 14.444 6)" d="M0 0h16v16H0z" />
               </clipPath>
             </defs>
           </svg>
         </span>
       </a>
-      <div class="atf__slider slider"></div>
+      <div class="atf__slider-container">
+        <div class="atf__slider swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper-slide-container">
+                <div class="swiper-slide-cover"></div>
+                <p class="swiper-slide-title">Какая-то подпись</p>
+                <img class="swiper-slide-img" src="img/atf__slider-1.webp" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide-container">
+                <div class="swiper-slide-cover"></div>
+                <p class="swiper-slide-title">Какая-то подпись</p>
+                <img class="swiper-slide-img" src="img/atf__slider-2.webp" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide-container">
+                <div class="swiper-slide-cover"></div>
+                <p class="swiper-slide-title">Какая-то подпись</p>
+                <img class="swiper-slide-img" src="img/atf__slider-3.webp" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-buttons-wrapper">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+
       <ul class="atf__social">
         <li class="atf__social-item">
           <a href="#" class="atf__social-link">
-            <img class="atf__social-link-img" src="img/facebook.svg" alt="" />
+            <img class="atf__social-link-img" width="25" src="img/facebook.svg" alt="" />
           </a>
         </li>
         <li class="atf__social-item">
           <a href="#" class="atf__social-link">
-            <img class="atf__social-link-img" src="img/instagram.svg" alt="" />
+            <img class="atf__social-link-img" width="25" src="img/instagram.svg" alt="" />
           </a>
         </li>
       </ul>
     </div>
   </div>
-</article>
+</section>
 
 		<article class="tour">
   <h2 class="visually-hidden">Описание тура</h2>
@@ -788,8 +808,9 @@
   </div>
 </footer>
 
-	<script src="js/libs.min.js"></script>
-<script src="js/main.min.js"></script>
+	<script src="js/libs.min.js" type="module"></script>
+<script src="js/main.min.js" type="module"></script>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 </body>
 
