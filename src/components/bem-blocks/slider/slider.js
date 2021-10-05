@@ -7,14 +7,6 @@ const swiper = new Swiper('.swiper', {
     600: {
       slidesPerView: 2,
     },
-
-    768: {
-      slidesPerView: 2,
-    },
-
-    1000: {
-      slidesPerView: 2,
-    }
   },
 
   navigation: {

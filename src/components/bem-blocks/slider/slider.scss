@@ -37,10 +37,7 @@
   }
 
   &-active .swiper-slide-title {
-    transition: bottom 0.3s ease-out, font-size 0.3s ease-out;
     z-index: 2;
-    bottom: 40px;
-    font-size: 1.25em;
   }
 }
 
@@ -60,6 +57,7 @@
   width: 210px;
   height: 210px;
   transform: translateX(15%);
+  //transform: translate(15%, -15%);
   //outline: 1px solid red;
   transition: all 0.3s ease;
 }
@@ -124,10 +122,9 @@
     // поворот стрелки в левой кнопке
     transform: rotate(180deg) translateY(-1px);
   }
-
-  // позиционирование кнопок для atf__slider
-
 }
+
+/////модификаторы swiper/////////////////
 
 @media screen and (min-width: 600px) {
   .atf__slider {

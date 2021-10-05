@@ -142,8 +142,14 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
+  .atf__title {
+    font-size: 4.5em;
+    max-width: 900px;
+  }
+}
 
+@media screen and (min-width: 1440px) {
   .atf__slider-container {
     margin-left: auto;
     transform: translateY(-25%);
