@@ -6,6 +6,10 @@ $grey: #acacac;
 
   padding-bottom: 150px;
 
+  & .container__inner {
+    position: relative;
+  }
+
   & .tour__day-title {
     color: #fff;
     max-width: 458px;
@@ -25,16 +29,14 @@ $grey: #acacac;
     border-bottom: 1px solid $grey;
   }
 
-  /*     &:after {
-        content: '';
-    } */
-
   &-slider {
     max-width: 760px;
-    height: 328px;
-    background: url(../img/slider-day-1.png) no-repeat;
     margin-top: 30px;
   }
+}
+
+@media screen and (min-width: 550px) {
+
 }
 
 @media screen and (min-width: 1440px) {
@@ -50,7 +52,7 @@ $grey: #acacac;
       height: 390px;
       top: 50%;
       transform: translateY(-50%);
-      right: 0;
+      right: -50px;
     }
   }
 }

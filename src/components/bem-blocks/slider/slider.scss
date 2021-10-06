@@ -1,87 +1,224 @@
-//outlines для отладки. Не удалять!
-.swiper {
-  width: 100%;
-  height: 280px;
-  margin-right: 0;
-  overflow: visible;
+//отладка
+
+/* .swiper {
+  outline: 1px solid red;
 }
 
-.swiper-wrapper {
-  max-width: 768px;
-  align-items: flex-end;
+.swiper-slide {
+  outline: 1px solid greenyellow;
+}
+
+.swiper-buttons-wrapper {
+  outline: 1px solid blueviolet;
+} */
+
+//
+
+.swiper {
+  & .swiper-slide-active .swiper-slide-container {
+    width: 100% !important;
+  }
+
+  & .swiper-wrapper {
+    // переопределение умолчания, чтобы предсказуемо работал align-items
+    height: auto;
+  }
 }
 
 .swiper-slide {
   position: relative;
-  overflow: hidden;
-  display: block;
-  text-align: center;
-  font-size: 18px;
-  cursor: grab;
-  //outline: 1px solid yellowgreen;
-
-  &-active {
-    cursor: pointer;
-    transition: 0.3s ease;
-  }
-
-  //внутренний контейнер активного слайдера
-  &-active .swiper-slide-container {
-    width: 100%;
-    height: 100%;
-    transform: translateX(0%);
-  }
-
-  &-active .swiper-slide-cover {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 40%);
-  }
-
-  &-active .swiper-slide-title {
-    z-index: 2;
-  }
 }
 
-.swiper-slide-cover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.5) 100%);
-  z-index: 2;
+.swiper-slide-active {
+  cursor: pointer;
+}
+
+.swiper-slide:not(.swiper-slide-active) {
+  cursor: grab;
 }
 
 .swiper-slide-container {
   position: absolute;
-  bottom: 0;
-  width: 210px;
-  height: 210px;
-  transform: translateX(15%);
-  //transform: translate(15%, -15%);
-  //outline: 1px solid red;
-  transition: all 0.3s ease;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 210px !important;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.199);
 }
 
 .swiper-slide-img {
-  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.swiper-slide-title {
-  position: absolute;
-  left: 20px;
-  bottom: 20px;
-  font-size: 1em;
-  color: #fff;
-  z-index: 1;
+//minixs
+@mixin overflow-v {
+  overflow: visible;
+}
+// modidiers
+//включает видимость слайдов и кнопок за пределами враппера
+.overflow-v {
+  overflow: visible;
+}
+
+.overflow-h {
+  overflow: hidden;
+}
+
+//выравнивает слайды по центру
+.swiper--slides-align-center {
+  & .swiper-wrapper {
+    align-items: center;
+  }
+}
+
+// выравнивает слайды по нижней границе
+.swiper--slides-align-bottom {
+  & .swiper-wrapper {
+    align-items: flex-end;
+  }
+}
+
+// задаёт размеры слайдов - активного и остальных
+// 1 цифра - размер активного
+// 2 цифра - размер остальных
+.swiper--slides-280-210 {
+  /* слайдам нельзя явно задать ширину, а высоту можно.
+  Поэтому высоту задаём явно, а нужный размер элементов
+  получаем, изменяя максимальную ширину слайдера,
+  пока слайды не будут нужного размера */
+  width: 100%; // до медиазапроса
+  height: 280px;
+  max-width: 593px;
+
+  /* Чтобы размеры слайдов "не зависели" от ширины окна
+  на промежуточных разрешениях, необходимо задать минимальную
+  ширину, равную максимальной ширине */
+  @media (min-width: 550px) {
+    min-width: 593px;
+
+    & .swiper-buttons-wrapper {
+      position: absolute;
+      left: 157px;
+    }
+  }
+
+  & .swiper-slide {
+    height: 280px;
+  }
+
+  // размер слайда: все, кроме активного. (активный h:100% по дефолту)
+  & .swiper-slide:not(.swiper-slide-active) {
+    height: 210px;
+  }
+}
+
+.swiper--slides-320-290 {
+  height: 378px;
+  max-width: 673px;
+
+  @media (min-width: 550px) {
+    min-width: 673px;
+  }
+
+  & .swiper-slide-container {
+    width: 290px !important;
+  }
+
+
+  & .swiper-slide-active {
+    height: 320px;
+  }
+
+  & .swiper-slide:not(.swiper-slide-active) {
+    height: 290px;
+  }
+}
+
+.swiper--slides-320-320 {
+  height: 378px;
+  max-width: 673px;
+
+  @media (min-width: 550px) {
+    min-width: 673px;
+  }
+
+  & .swiper-slide-container {
+    width: 100% !important;
+  }
+
+  & .swiper-slide-active {
+    height: 320px;
+  }
+
+  & .swiper-slide:not(.swiper-slide-active) {
+    height: 320px;
+  }
+}
+
+.swiper--slides-290-380-350-460 {
+  height: 500px;
+  max-width: 735px;
+
+  & .swiper-slide-text {
+    margin: 25px 0px 0px 0px;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+  }
+
+  & .swiper-slide-text-link {
+    font-weight: 400;
+    color: #F47648;
+    text-decoration: underline;
+  }
+
+  & .swiper-buttons-wrapper {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  & .swiper-slide-container {
+    width: 100% !important;
+  }
+
+  & .swiper-slide-active {
+    height: 380px;
+  }
+
+  & .swiper-slide:not(.swiper-slide-active) {
+    height: 380px;
+  }
+
+  @media (min-width: 550px) {
+    height: 615px;
+    min-width: 735px;
+    transform: translateX(-13%);
+
+    & .swiper-wrapper {
+      transform: translateX(-550px);
+    }
+
+    & .swiper-buttons-wrapper {
+      right: 13%;
+      bottom: 0;
+    }
+
+    & .swiper-slide-active {
+      height: 460px;
+    }
+
+    & .swiper-slide:not(.swiper-slide-active) {
+      height: 460px;
+    }
+  }
 }
 
 // buttons
-.atf__slider {
+.swiper {
   & .swiper-buttons-wrapper {
-    //outline: 1px solid red;
     display: inline-flex;
     justify-content: space-between;
     width: 120px;
@@ -124,22 +261,44 @@
   }
 }
 
-/////модификаторы swiper/////////////////
+// перестановка кнопок на слайдере с обратной прокруткой
+.swiper[dir=rtl] {
+  & .swiper-buttons-wrapper {
+    flex-direction: row-reverse;
+    width: 80px; //фикс расстояния между кнопками
+    margin-right: 10px; // правильный отступ
+  }
+}
 
-@media screen and (min-width: 600px) {
-  .atf__slider {
+// ВСЕ ЭТИ МЕДИА ЗАИНКЛЮДИТБ В swiper-slides-XXX-XXX
+@media (min-width: 550px) {
+  .swiper--slides-280-210 {
     & .swiper-buttons-wrapper {
-      margin-left: 148px;
+      position: absolute;
+      left: 157px;
     }
   }
-}
 
-
-@media screen and (max-width: 768px) {
-  .swiper {
-    margin-right: auto;
-    margin-left: 0;
+  .swiper--slides-320-290 {
+    & .swiper-buttons-wrapper {
+      position: absolute;
+      left: 177px;
+    }
   }
-}
 
-@media screen and (min-width: 1440px) {}
+  .swiper--slides-320-290[dir=rtl] {
+    & .swiper-buttons-wrapper {
+      position: absolute;
+      right: 177px;
+    }
+  }
+
+
+  .swiper--slides-320-320 {
+    & .swiper-buttons-wrapper {
+      position: absolute;
+      right: 186px;
+    }
+  }
+
+}

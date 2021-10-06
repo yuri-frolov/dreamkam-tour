@@ -99,19 +99,21 @@
   margin-right: 4px;
 }
 
-@media screen and (min-width: 768px) {
-
-  .header__burger {
-    margin-top: 0;
-  }
-
+@media screen and (min-width: 550px) {
   .header__link {
     display: block;
     margin-right: 26px;
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 768px) {
+
+  .header__burger {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 900px) {
   .header__nav {
     display: block;
   }
