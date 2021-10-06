@@ -33,10 +33,6 @@
   cursor: pointer;
 }
 
-.swiper-slide:not(.swiper-slide-active) {
-  cursor: grab;
-}
-
 .swiper-slide-container {
   position: absolute;
   left: 50%;
