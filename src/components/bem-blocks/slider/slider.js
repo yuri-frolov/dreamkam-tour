@@ -1,6 +1,3 @@
-const atfSlider = document.querySelector('.atf__slider');
-const day1Slider = document.querySelector('.tour__day-1-slider');
-
 const swiper = new Swiper('.swiper', {
   slidesPerView: 1,
   centeredSlides: true,
@@ -35,10 +32,19 @@ const swiperRtl = new Swiper('.swiper-rtl', {
   },
 });
 
-const mQuery = window.matchMedia('(min-width: 1440px)');
+const day1Slider = document.querySelector('.tour__day-1-slider');
+const mediaQuery1440 = window.matchMedia('(min-width: 1440px)');
 
-if (mQuery.matches) {
+if (mediaQuery1440.matches) {
   day1Slider.classList.remove('overflow-v');
   day1Slider.classList.add('overflow-h');
 }
 
+
+const day2Slider = document.querySelector('.tour__day-2-slider');
+const mediaQuery1100 = window.matchMedia('(min-width: 1100px)');
+
+if (mediaQuery1100.matches) {
+  day2Slider.classList.remove('overflow-v');
+  day2Slider.classList.add('overflow-h');
+}
