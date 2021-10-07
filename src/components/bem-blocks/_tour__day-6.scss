@@ -26,13 +26,6 @@
   & .tour__day-optional {
     max-width: 700px;
   }
-
-  &-slider {
-    max-width: 1000px;
-    height: 400px;
-    background: url(../img/slider-day-6.png) no-repeat;
-    margin-top: 30px;
-  }
 }
 
 @import 'optional.scss';
@@ -47,11 +40,6 @@
     & .col-1 {
       max-width: 506px;
       margin-right: auto;
-    }
-
-    &-slider {
-      width: 550px;
-      background: url(../img/slider-day-6.png) no-repeat;
     }
   }
 }
