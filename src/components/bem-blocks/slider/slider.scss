@@ -15,6 +15,10 @@
 //
 
 .swiper {
+  .swiper-slide:not(.swiper-slide-active) {
+    cursor: grab;
+  }
+
   & .swiper-slide-active .swiper-slide-container {
     width: 100% !important;
   }
