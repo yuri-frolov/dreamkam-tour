@@ -7,7 +7,6 @@
   &-slider {
     max-width: 760px;
     height: 358px;
-    background: url(../img/slider-day-3.png) no-repeat;
     margin-top: 30px;
   }
 }
@@ -18,8 +17,7 @@
     padding-bottom: 100px;
 
     &-slider {
-      background: url(../img/slider-day-3-tablet.png) no-repeat;
-      min-height: 430px;
+
     }
   }
 
@@ -50,8 +48,6 @@
     }
 
     &-slider {
-      min-width: 650px;
-      background: url(../img/slider-day-3-desktop.png) no-repeat;
     }
   }
 }
