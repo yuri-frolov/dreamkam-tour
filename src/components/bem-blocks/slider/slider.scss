@@ -48,13 +48,8 @@
   object-fit: cover;
 }
 
-//minixs
-@mixin overflow-v {
-  overflow: visible;
-}
-
 // modidiers
-//включает видимость слайдов и кнопок за пределами враппера
+//включает видимость слайдов за пределами слайдера
 .overflow-v {
   overflow: visible;
 }
@@ -75,6 +70,18 @@
   & .swiper-wrapper {
     align-items: flex-end;
   }
+}
+
+//изменяет цвет кнопок слайдера
+.swiper--buttons-black {
+  & .swiper-buttons-wrapper .swiper-button {
+    border-color: #000;
+  }
+
+  & .swiper-buttons-wrapper .swiper-button:before {
+    content: url('../img/swiper-button-arrow--black.svg');
+  }
+
 }
 
 // задаёт размеры слайдов - активного и остальных
@@ -255,18 +262,6 @@
   & .swiper-button-prev:before {
     // поворот стрелки в левой кнопке
     transform: rotate(180deg) translateY(-1px);
-  }
-
-  & .swiper-button--black {
-    border-color: #000;
-  }
-
-  & .swiper-button--black:before {
-    content: url('../img/swiper-button-arrow--black.svg');
-  }
-
-  & .swiper-button-prev.swiper-button--black:before {
-    /* transform: scale(-1, -1); */
   }
 }
 
