@@ -25,10 +25,8 @@ $grey: #acacac;
   }
 
   &-slider {
-    max-width: 760px;
-    height: 400px;
-    background: url(../img/slider-day-4.png) no-repeat;
     margin-top: 30px;
+    margin-left: 0;
   }
 }
 
@@ -41,10 +39,6 @@ $grey: #acacac;
     & .col-1 {
       max-width: 536px;
       margin-right: auto;
-    }
-
-    &-slider {
-      width: 600px;
     }
   }
 }

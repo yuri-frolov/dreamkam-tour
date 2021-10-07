@@ -51,3 +51,9 @@ if (mediaQuery1440.matches) {
   day3Slider.classList.remove('overflow-v');
   day3Slider.classList.add('overflow-h', 'swiper--buttons-black');
 }
+
+const day4Slider = document.querySelector('.tour__day-4-slider');
+if (mediaQuery1440.matches) {
+  day4Slider.classList.remove('overflow-v');
+  day4Slider.classList.add('overflow-h');
+}
