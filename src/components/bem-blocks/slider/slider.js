@@ -69,3 +69,9 @@ if (mediaQuery1440.matches) {
   day6Slider.classList.remove('overflow-v');
   day6Slider.classList.add('overflow-h');
 }
+
+const day7Slider = document.querySelector('.tour__day-7-slider');
+if (mediaQuery1440.matches) {
+  day7Slider.classList.remove('overflow-v');
+  day7Slider.classList.add('overflow-h');
+}

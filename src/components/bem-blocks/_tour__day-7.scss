@@ -17,12 +17,6 @@
   & .optional {
     color: #000;
   }
-
-  &-slider {
-    max-width: 1000px;
-    height: 400px;
-    background: url(../img/slider-day-7.png) no-repeat;
-  }
 }
 
 @import 'optional.scss';
@@ -92,8 +86,7 @@
     }
 
     &-slider {
-      width: 840px;
-      background: url(../img/slider-day-7-desktop.png) no-repeat;
+      transform: translateX(-67px);
     }
   }
 
