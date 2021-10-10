@@ -1,45 +1,80 @@
 .team {
   padding-top: 50px;
   padding-bottom: 50px;
-}
 
-.container {}
+  & .team__title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+  }
 
-.container__inner {}
-
-.team__title {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2em;
-  font-weight: 700;
-}
-
-.team__description {
+  & .team__description {
     margin-top: 50px;
     line-height: 1.5;
     max-width: 600px;
     color: #313131;
+  }
+
+  &__list {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 40px;
+  }
+
+  &__item {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 290px;
+    margin-top: 50px;
+  }
+
+  &__item-info {
+    padding: 25px 0px;
+  }
+
+  &__item-info-name {
+    font-weight: 700;
+  }
+
+  &__item-info-textlink {
+    color: #F47648;
+    display: inline-block;
+    position: relative;
+  }
+
+  &__item-info-textlink:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 120%;
+    width: 0;
+    height: 1px;
+    background-color: #F47648;
+
+    transition: 0.2s ease;
+  }
+
+    &__item-info-textlink:hover:after {
+    width: 100%;
+  }
+
 }
-
-.team__slider {
-  background: url(../img/slider-team-mobile.png) no-repeat;
-  min-width: 288px;
-  min-height: 501px;
-  margin-top: 50px;
-}
-
-.slider {}
-
 
 @media screen and (min-width: 768px) {
-
   .team {
     padding-top: 65px;
     padding-bottom: 80px;
   }
+}
 
-  .team__slider {
-    background: url(../img/slider-team-tablet.png) no-repeat;
-    min-height: 615px;
+@media screen and (min-width: 1030px) {
+  .team {
+    &__item {
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
 }
 
@@ -47,13 +82,13 @@
   .team {
     padding-top: 120px;
     padding-bottom: 120px;
-  }
 
-  .team__title {
-    font-size: 4em;
-  }
+    & .team__title {
+      font-size: 4em;
+    }
 
-  .team__slider {
-    background: url(../img/slider-team-desktop.png) no-repeat;
+    &__item {
+      max-width: 350px;
+    }
   }
 }

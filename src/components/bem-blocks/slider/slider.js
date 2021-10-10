@@ -15,7 +15,26 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
-const swiperRtl = new Swiper('.swiper-rtl', {
+const swiperTeam = new Swiper('.swiper-team', {
+  slidesPerView: 1,
+  spaceBetween: 96,
+  loop: false,
+  mousewheel: false,
+  breakpoints: {
+    550: {
+      slidesPerView: 2,
+    },
+    1440: {
+      slidesPerView: 3,
+    },
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+/* const swiperRtl = new Swiper('.swiper-rtl', {
   slidesPerView: 1,
   centeredSlides: true,
   spaceBetween: 35,
@@ -30,7 +49,8 @@ const swiperRtl = new Swiper('.swiper-rtl', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-});
+}); */
+
 const mediaQuery1440 = window.matchMedia('(min-width: 1440px)');
 const mediaQuery1100 = window.matchMedia('(min-width: 1100px)');
 

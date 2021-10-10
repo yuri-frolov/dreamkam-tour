@@ -1,6 +1,7 @@
 //отладка
 
-/* .swiper {
+.swiper,
+.swiper-team {
   outline: 1px solid red;
 }
 
@@ -10,11 +11,12 @@
 
 .swiper-buttons-wrapper {
   outline: 1px solid blueviolet;
-} */
+}
 
 //
 
-.swiper {
+.swiper,
+.swiper-team {
   .swiper-slide:not(.swiper-slide-active) {
     cursor: grab;
   }
@@ -203,11 +205,6 @@
   @media (min-width: 550px) {
     height: 615px;
     min-width: 735px;
-    transform: translateX(-13%);
-
-    & .swiper-wrapper {
-      transform: translateX(-550px);
-    }
 
     & .swiper-buttons-wrapper {
       right: 13%;
@@ -225,7 +222,8 @@
 }
 
 // buttons
-.swiper {
+.swiper,
+.swiper-team {
   & .swiper-buttons-wrapper {
     display: inline-flex;
     justify-content: space-between;
