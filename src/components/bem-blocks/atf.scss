@@ -23,7 +23,7 @@
   font-weight: 900;
   line-height: 1.2;
   color: #fff;
-
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   margin-top: 130px;
   max-width: 590px;
 }
@@ -131,7 +131,7 @@
 }
 
 @media screen and (min-width: 1100px) {
-    .atf__slider {
+  .atf__slider {
     margin-top: -30px;
     transform: translateX(200px);
   }

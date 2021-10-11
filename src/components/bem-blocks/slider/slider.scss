@@ -33,6 +33,8 @@
 
 .swiper-slide {
   position: relative;
+
+  transition: height 0.3s ease;
 }
 
 .swiper-slide-active {
@@ -46,6 +48,8 @@
   width: 210px !important;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.199);
+
+  transition: width 0.3s ease;
 }
 
 .swiper-slide-img {
@@ -102,6 +106,10 @@
   height: 280px;
   max-width: 593px;
 
+  & .swiper-wrapper {
+    height: 280px;
+  }
+
   /* Чтобы размеры слайдов "не зависели" от ширины окна
   на промежуточных разрешениях, необходимо задать минимальную
   ширину, равную максимальной ширине */
@@ -127,6 +135,10 @@
 .swiper--slides-320-290 {
   height: 378px;
   max-width: 673px;
+
+  & .swiper-wrapper {
+    height: 320px;
+  }
 
   @media (min-width: 550px) {
     min-width: 673px;
@@ -228,8 +240,8 @@
     display: inline-flex;
     justify-content: space-between;
     width: 120px;
-    margin-top: 20px;
-    margin-left: -9px;
+    position: absolute;
+    bottom: 0;
   }
 
   & .swiper-button-prev,
