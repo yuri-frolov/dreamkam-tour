@@ -356,6 +356,24 @@
       url(../img/starichkov-island.webp) / cover no-repeat;
   }
 }
+
+.tour__day-6-slider {
+  & .swiper-slide:nth-child(1) .swiper-slide-container {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 20%, transparent 60%),
+      url(../img/khalaktyr.webp) / cover no-repeat;
+  }
+
+  & .swiper-slide:nth-child(2) .swiper-slide-container {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 20%, transparent 60%),
+      url(../img/mishennaya.webp) / cover no-repeat;
+  }
+
+  & .swiper-slide:nth-child(3) .swiper-slide-container {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 20%, transparent 60%),
+      url(../img/fish-market.webp) / cover no-repeat;
+  }
+}
+
 // buttons
 .swiper,
 .swiper-team {
