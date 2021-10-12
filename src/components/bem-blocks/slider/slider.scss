@@ -328,6 +328,17 @@
   }
 }
 
+.tour__day-4-slider {
+  & .swiper-slide:nth-child(1) .swiper-slide-container {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 20%, transparent 60%),
+      url(../img/volcano-avachinsky.webp) / cover no-repeat;
+  }
+
+  & .swiper-slide:nth-child(2) .swiper-slide-container {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 20%, transparent 60%),
+      url(../img/mountain-camel.webp) / cover no-repeat;
+  }
+}
 // buttons
 .swiper,
 .swiper-team {
