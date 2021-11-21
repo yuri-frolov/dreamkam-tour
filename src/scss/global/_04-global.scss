@@ -41,10 +41,6 @@ input:focus {
   outline: transparent;
 }
 
-button {
-  @include no-btn;
-}
-
 img {
   max-width: 100%;
   display: block;
@@ -74,6 +70,10 @@ dd {
 fieldset {
   border: none;
   padding-left: 0;
+}
+
+button {
+  @include no-btn;
 }
 
 ///DEBUG
@@ -130,9 +130,12 @@ HTML {
 
   width: 1px;
   height: 1px;
-  margin: -1px;
+  //margin: -1px; фикс дёргания модалки
   border: 0;
   padding: 0;
+
+  opacity : 0;
+  visibility: hidden;
 
   clip: rect(0 0 0 0);
   overflow: hidden;

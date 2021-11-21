@@ -7,7 +7,7 @@
   <meta name="description" content="Easy webdev startpack by budfy" />
   <meta name="keywords" content="Webdev, Gulp4, html, css, js, jquery" />
   <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/libs.min.css" />
   <link rel="stylesheet" href="css/style.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -66,6 +66,21 @@
 </header>
 
 	<main class="main">
+    <div class="menu">
+  <a href="javascript:void(0)" class="menu__close" onclick="closeNav()">
+    <span></span>
+    <span></span>
+  </a>
+
+  <div class="menu__links">
+    <a class="menu__link" href="#">Расписание тура</a>
+    <a class="menu__link" href="#">Как записаться</a>
+    <a class="menu__link" href="#">Стоимость</a>
+    <a class="menu__link" href="#">Команда</a>
+    <a href="" class="header__link">Забронировать</a>
+  </div>
+</div>
+
 		<section class="atf">
   <div class="container">
     <div class="container__inner">
@@ -224,7 +239,7 @@
 
         <div class="tour__day-1-slider swiper swiper--slides-320-290 swiper--slides-align-center overflow-v">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-target="homeVolcanoes">
               <div class="swiper-slide-container">
                 <div class="swiper-slide__text-wrapper">
                   <p class="swiper-slide__title">"Домашние" вулканы</p>
@@ -232,7 +247,7 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-target="monument">
               <div class="swiper-slide-container">
                 <div class="swiper-slide__text-wrapper">
                   <p class="swiper-slide__title">Памятник <br>"Здесь начинается Россия"</p>
@@ -241,7 +256,7 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-target="paratunka">
               <div class="swiper-slide-container">
                 <div class="swiper-slide__text-wrapper">
                   <p class="swiper-slide__title">Посёлок Паратунка</p>
@@ -291,7 +306,7 @@
           <div dir="rtl"
             class="tour__day-2-slider swiper swiper--slides-320-320 swiper--slides-align-center swiper--buttons-black overflow-v">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
+              <div class="swiper-slide" data-target="viluchinskyVolcano">
                 <div class="swiper-slide-container">
                   <div class="swiper-slide__text-wrapper">
                     <p class="swiper-slide__title">Вулкан Вилючинский</p>
@@ -299,7 +314,7 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide" data-target="viluchinskyWaterfall">
                 <div class="swiper-slide-container">
                   <div class="swiper-slide__text-wrapper">
                     <p class="swiper-slide__title">Вилючинский водопад</p>
@@ -307,7 +322,7 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide" data-target="paratunkaSprings">
                 <div class="swiper-slide-container">
                   <div class="swiper-slide__text-wrapper">
                     <p class="swiper-slide__title">Верхне-Паратунские источники</p>
@@ -404,7 +419,7 @@
             <div dir="rtl"
               class="tour__day-3-slider swiper swiper--slides-320-290 swiper--slides-align-center overflow-v">
               <div class="swiper-wrapper">
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-target="vachkazhetsVolcano">
                   <div class="swiper-slide-container">
                     <div class="swiper-slide__text-wrapper">
                       <p class="swiper-slide__title">Вачкажец</p>
@@ -413,7 +428,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-target="vachkazhetsWaterfalls">
                   <div class="swiper-slide-container">
                     <div class="swiper-slide__text-wrapper">
                       <p class="swiper-slide__title">Водопады Вачкажца</p>
@@ -421,7 +436,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-target="mountainLake">
                   <div class="swiper-slide-container">
                     <div class="swiper-slide__text-wrapper">
                       <p class="swiper-slide__title">Горное озеро</p>
@@ -467,7 +482,7 @@
             <div class="col-2">
               <div class="tour__day-4-slider swiper swiper--slides-320-290 swiper--slides-align-center overflow-v">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">
+                  <div class="swiper-slide" data-target="avachinskyVolcano">
                     <div class="swiper-slide-container">
                       <div class="swiper-slide__text-wrapper">
                         <p class="swiper-slide__title">Подножие Авачинского вулкана</p>
@@ -475,7 +490,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-slide">
+                  <div class="swiper-slide" data-target="camelMountain">
                     <div class="swiper-slide-container">
                       <div class="swiper-slide__text-wrapper">
                         <p class="swiper-slide__title">Гора Верблюд</p>
@@ -522,7 +537,7 @@
               <div dir="rtl"
                 class="tour__day-5-slider swiper swiper--slides-320-290 swiper--slides-align-center overflow-v">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">
+                  <div class="swiper-slide" data-target="avachinskayaBay">
                     <div class="swiper-slide-container">
                       <div class="swiper-slide__text-wrapper">
                         <p class="swiper-slide__title">Авачинская бухта</p>
@@ -530,7 +545,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-slide">
+                  <div class="swiper-slide" data-target="rocksThreeBrothers">
                     <div class="swiper-slide-container">
                       <div class="swiper-slide__text-wrapper">
                         <p class="swiper-slide__title">Скалы Три брата</p>
@@ -538,7 +553,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-slide">
+                  <div class="swiper-slide" data-target="islandOfOldies">
                     <div class="swiper-slide-container">
                       <div class="swiper-slide__text-wrapper">
                         <p class="swiper-slide__title">Остров Старичков</p>
@@ -592,7 +607,7 @@
             <div class="col-2">
               <div class="tour__day-6-slider swiper swiper--slides-320-290 swiper--slides-align-center overflow-v">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">
+                  <div class="swiper-slide" data-target="khalaktyrBeach">
                     <div class="swiper-slide-container">
                       <div class="swiper-slide__text-wrapper">
                         <p class="swiper-slide__title">Халактырский пляж</p>
@@ -600,7 +615,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-slide">
+                  <div class="swiper-slide" data-target="mishennayaHill">
                     <div class="swiper-slide-container">
                       <div class="swiper-slide__text-wrapper">
                         <p class="swiper-slide__title">Мишé‎нная сопка</p>
@@ -608,7 +623,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-slide">
+                  <div class="swiper-slide" data-target="fishMarket">
                     <div class="swiper-slide-container">
                       <div class="swiper-slide__text-wrapper">
                         <p class="swiper-slide__title">Рыбный рынок</p>
@@ -682,7 +697,7 @@
             <div dir="rtl"
               class="tour__day-7-slider swiper swiper--slides-320-320 swiper--slides-align-center swiper--buttons-black overflow-v">
               <div class="swiper-wrapper">
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-target="valleyOfGeysers">
                   <div class="swiper-slide-container">
                     <div class="swiper-slide__text-wrapper">
                       <p class="swiper-slide__title">Долина гейзеров</p>
@@ -690,7 +705,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-target="calderaUzon">
                   <div class="swiper-slide-container">
                     <div class="swiper-slide__text-wrapper">
                       <p class="swiper-slide__title">Кальдера вулкана Узон</p>
@@ -698,7 +713,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-target="nalychevskayaValley">
                   <div class="swiper-slide-container">
                     <div class="swiper-slide__text-wrapper">
                       <p class="swiper-slide__title">Налычевская долина</p>
@@ -956,31 +971,6 @@
     </div>
   </div>
 </section>
-
-    <div class="modal">
-  <div class="modal-box">
-    <span class="modal-box__close">
-      <span></span>
-      <span></span>
-    </span>
-    <div class="modal-box__header"></div>
-    <div class="modal-box__content">
-      <h4 class="modal-box__title">Заголовок</h4>
-      <p class="modal-box__text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Речью, жизни своего lorem однажды вершину послушавшись предложения его. Над города жаренные парадигматическая что безопасную ведущими заглавных не. Рукописи, дороге? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam totam, doloremque nulla assumenda, aut eius dolorum nisi facere dolorem sed beatae numquam reiciendis quis corrupti aliquam minima magni velit illo?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi temporibus nostrum dignissimos modi explicabo, dolores nobis vitae sapiente dicta assumenda quaerat praesentium alias enim sed illo tempore, in facilis provident!
-      Voluptatem rerum quisquam aut esse perferendis. Aperiam labore eveniet quis quasi! Soluta recusandae sequi debitis corrupti. Debitis nostrum quaerat ullam aperiam laudantium corrupti non nulla, velit dolorum cumque ab tempora!
-      Totam cumque illum omnis, culpa tempora cum molestiae perspiciatis laudantium. Illum sed expedita cumque, velit molestiae iste reiciendis cupiditate fuga nostrum! Ipsam repellat ratione corrupti? Dolorum voluptatum iure est ipsum!
-      Molestias temporibus facere rem omnis eligendi tempora non ad unde. Quasi eos omnis repellat sapiente error molestiae nihil similique ad, consequatur cum ab consectetur! Fuga iste maiores dolorem accusamus sint.
-      Cum saepe ipsum, nobis maxime iure nostrum provident, ad natus ipsam odio voluptate sed! Ratione repudiandae iure rerum. Perferendis minus soluta, tempore ratione quae cupiditate. Illo totam autem repellat cumque Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque voluptate animi dolorum. Temporibus, eaque repellendus earum asperiores, id reiciendis aut, iure maxime incidunt ex quia. Voluptatibus nihil eum error fugiat?
-      Rerum neque animi, hic asperiores nesciunt aperiam natus vel beatae alias saepe quo, delectus ut libero dicta id odio quae temporibus, vero pariatur dolorem quos culpa praesentium. Veniam, maxime. Eum?
-      Sapiente amet reprehenderit temporibus, blanditiis est eos repellendus facilis! Assumenda eveniet iusto accusamus illum eos aspernatur, nesciunt nisi a, fuga et vitae doloribus perferendis sit iste quidem, labore minus hic?</p>
-    </div>
-    <div class="modal-box__footer">
-      <div class="modal-box__footer-close">
-        <span class="modal-box__footer-button">Вернуться в маршруту</span>
-      </div>
-    </div>
-  </div>
-</div>
 
 	</main>
 	<footer class="footer">

@@ -9,6 +9,10 @@
   transition: all 0.4s ease;
 }
 
+.header .header__link {
+  display: none;
+}
+
 // навешивается, как только начинается скролл
 .header__scrolled {
   backdrop-filter: blur(8px);
@@ -63,21 +67,6 @@
   }
 }
 
-.header__link {
-  display: none;
-  border: 1px solid #000;
-  border-radius: 5px;
-  padding: 10px 31px;
-  transition: color 0.3s, background-color 0.3s, border-color 0s;
-
-  &:hover {
-    color: #fff;
-    background-color: #f47648;
-    border-color: #f47648;
-    box-shadow: 0 0 14px rgba(244, 118, 72, 10%), 0 0 6px rgba(244, 118, 72, 8%);
-  }
-}
-
 .header__burger {
   width: 24px;
   height: 19px;
@@ -100,7 +89,7 @@
 }
 
 @media screen and (min-width: 550px) {
-  .header__link {
+  .header .header__link {
     display: block;
     margin-right: 26px;
   }
@@ -114,6 +103,12 @@
 }
 
 @media screen and (min-width: 900px) {
+
+  .header .header__link {
+    margin-right: 0;
+    margin-left: 63px;
+  }
+
   .header__nav {
     display: block;
   }
@@ -130,11 +125,6 @@
 
   .header__burger {
     display: none;
-  }
-
-  .header__link {
-    margin-right: 0;
-    margin-left: 63px;
   }
 }
 
