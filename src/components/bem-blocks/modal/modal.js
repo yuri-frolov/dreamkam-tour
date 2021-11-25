@@ -131,6 +131,7 @@ function createModal(data, place) {
   for (let key in data) {
     modals.insertAdjacentHTML('beforeend', `
     <div class="modal visually-hidden" data-modal="${key}">
+      <div class="modal__overlay"></div>
       <div class="modal__box">
         <span class="modal__close">
           <span></span>
@@ -154,33 +155,31 @@ function createModal(data, place) {
 createModal(dataModal, body);
 
 let slides = document.querySelectorAll('.swiper-slide');
-let modals = document.querySelectorAll('.modal');
 
 /* Модалки на visuallyhidden */
-function showModal(elements, modals) {
+function showModal(elements) {
   for (let element of elements) {
     /* по клику на элементе */
     element.addEventListener('click', function () {
-      /* 2) превентивно выключаем все модалки */
-      modals.forEach((mod) => {
-        mod.classList.add('visually-hidden');
-      });
-      /* 3) забираем атрибут с кликнутого элемента */
+      /* 1) блокируем прокрутку */
+      body.style.overflow = "hidden";
+      /* 2) забираем атрибут с кликнутого элемента */
       let clickedElement = element.getAttribute('data-target');
-      /* 4) ищем модалку с тем же значением атрибута */
+      /* 3) ищем модалку с тем же значением атрибута */
       let matchedModal = document.querySelector(`[data-modal="${clickedElement}"]`);
-      /* 5) включаем модалку */
+      /* 4) включаем модалку */
       matchedModal.classList.remove('visually-hidden');
       //////////////////////////////////////////
-      /* 6) Находим закрывающие элементы внутри активной модалки */
-      let closeModalElements = matchedModal.querySelectorAll('.modal__close, .modal__footer-close, .modal__footer-button');
-      /* 7) Каждая из них будет её закрывать */
+      /* 5) Находим закрывающие элементы внутри активной модалки */
+      let closeModalElements = matchedModal.querySelectorAll('.modal__overlay, .modal__close, .modal__footer-close, .modal__footer-button');
+      /* 6) Каждая из них будет её закрывать модалку и возвращать прокрутку */
       closeModalElements.forEach((el) => {
         el.addEventListener('click', function () {
           matchedModal.classList.add('visually-hidden');
+          body.style.overflow = "visible";
         });
       });
     });
   }
 }
-showModal(slides, modals);
+showModal(slides);
