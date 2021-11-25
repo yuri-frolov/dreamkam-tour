@@ -137,10 +137,10 @@ function createModal(data, place) {
           <span></span>
           <span></span>
         </span>
-        <div class="modal__header" style="background-image: url(${data[key]['imgUrl']});"></div>
-        <h4 class="modal__title">${data[key]['title']}</h4>
+        <div class="modal__header" style="background-image: url(${data[key].imgUrl});"></div>
+        <h4 class="modal__title">${data[key].title}</h4>
         <div class="modal__content">
-          <p class="modal__text">${data[key]['text']}</p>
+          <p class="modal__text">${data[key].text}</p>
         </div>
         <div class="modal__footer">
           <div class="modal__footer-close">
@@ -172,7 +172,7 @@ function showModal(elements) {
       //////////////////////////////////////////
       /* 5) Находим закрывающие элементы внутри активной модалки */
       let closeModalElements = matchedModal.querySelectorAll('.modal__overlay, .modal__close, .modal__footer-close, .modal__footer-button');
-      /* 6) Каждая из них будет её закрывать модалку и возвращать прокрутку */
+      /* 6) Каждый из них будет закрывать модалку и возвращать прокрутку */
       closeModalElements.forEach((el) => {
         el.addEventListener('click', function () {
           matchedModal.classList.add('visually-hidden');
